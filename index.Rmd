@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : 
-ext_widgets: {rCharts: libraries/widgets/nvd3}
+ext_widgets: {rCharts: libraries/nvd3}
 logo : iris.jpg
 --- 
 ```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F, results='hide'}
