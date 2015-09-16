@@ -1,7 +1,7 @@
 ---
 title       : Predicting Iris Species
 subtitle    : Developing Data Products
-author      : PG
+author      : PGT
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
