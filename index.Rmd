@@ -41,15 +41,19 @@ library(slidifyLibraries)
 
 ```{r, echo = FALSE}
 names(iris) = gsub("\\.", "", names(iris))
-r1 <- rPlot(SepalLength ~ PetalWidth,
-            data = iris,
-            color = 'Species',
-            type = 'point'
-            )
-r1$save('fig/r1.html', cdn = TRUE)
+n1 <- nPlot(SepalLength ~ PetalWidth, group = 'Species', data = iris, type = 'scatterChart')
+
+#r1 <- rPlot(SepalLength ~ PetalWidth,
+#            data = iris,
+#            color = 'Species',
+#            type = 'point'
+#            )
+#r1$save('fig/r1.html')
+n1$save('fig/n1.html')
+
 ```
 
-<iframe src="fig/r1.html" width=100%, height=600></iframe>
+<iframe src="fig/n1.html" width=100%, height=600></iframe>
 
 ---
 
