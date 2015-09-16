@@ -5,11 +5,11 @@ author      : PG
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax, nvd3]            # {mathjax, quiz, bootstrap}
+hitheme     : solarized_light      # 
+widgets     : [nvd3]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-ext_widget : {rCharts: ["libraries/nvd3"]}
+ext_widget : 
 logo : iris.jpg
 --- 
 
@@ -57,10 +57,8 @@ predict(ldaTune, newdata = data.frame(PetalLength = 3.4,
                                       SepalWidth = 1.1))$class
 ```
 
-```
 [1] virginica
 Levels: setosa versicolor virginica
-```
 
 ---
 
