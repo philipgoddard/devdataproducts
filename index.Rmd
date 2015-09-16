@@ -46,7 +46,7 @@ r1 <- rPlot(SepalLength ~ PetalWidth,
             color = 'Species',
             type = 'point'
             )
-r1$save('fig/r1.html')
+r1$save('fig/r1.html', cdn = TRUE)
 ```
 
 <iframe src="fig/r1.html" width=100%, height=600></iframe>
