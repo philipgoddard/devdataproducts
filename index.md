@@ -5,11 +5,11 @@ author      : PG
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : solarized_light      # 
-widgets     : [nvd3]            # {mathjax, quiz, bootstrap}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
-ext_widget : 
+knit        : 
+ext_widgets: {rCharts: libraries/widgets/nvd3}
 logo : iris.jpg
 --- 
 
