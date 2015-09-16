@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : 
-ext_widgets: {rCharts: ["libraries/nvd3"]}
+ext_widgets: {rCharts: [libraries/nvd3]}
 logo : iris.jpg
 --- 
 ```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F, results='hide'}
@@ -49,11 +49,10 @@ n1 <- nPlot(SepalLength ~ PetalWidth,
             data = iris,
             type = 'scatterChart')
 
-n1$save('fig/n1.html')
-
+#n1$save('fig/n1.html')
+n1$print('chart1')
 ```
 
-<iframe src="fig/n1.html" ></iframe>
 
 ---
 
