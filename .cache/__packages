@@ -1,0 +1,10 @@
+base
+rCharts
+knitr
+devtools
+slidify
+slidifyLibraries
+lattice
+ggplot2
+caret
+MASS
