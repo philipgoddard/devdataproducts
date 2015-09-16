@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, nvd3]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ext_widget : {rCharts: ["libraries/nvd3"]}
@@ -41,14 +41,11 @@ library(slidifyLibraries)
 
 ```{r, echo = FALSE}
 names(iris) = gsub("\\.", "", names(iris))
-n1 <- nPlot(SepalLength ~ PetalWidth, group = 'Species', data = iris, type = 'scatterChart')
+n1 <- nPlot(SepalLength ~ PetalWidth,
+            group = 'Species',
+            data = iris,
+            type = 'scatterChart')
 
-#r1 <- rPlot(SepalLength ~ PetalWidth,
-#            data = iris,
-#            color = 'Species',
-#            type = 'point'
-#            )
-#r1$save('fig/r1.html')
 n1$save('fig/n1.html')
 
 ```
