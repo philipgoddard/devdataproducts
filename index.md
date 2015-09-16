@@ -32,7 +32,7 @@ logo : iris.jpg
 
 
 
-<iframe src="fig/n1.html" width=100%, height=600></iframe>
+<iframe src="fig/n1.html" ></iframe>
 
 ---
 
