@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-ext_widget : {rCharts: ["libraries/highcharts","libraries/nvd3", "libraries/morris", "libraries/leaflet", "libraries/rickshaw", "libraries/polycharts"]}
+ext_widget : {rCharts: ["libraries/nvd3"]}
 logo : iris.jpg
 --- 
 
