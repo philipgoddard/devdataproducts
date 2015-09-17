@@ -15,7 +15,7 @@ logo : iris.jpg
 ```{r setup, cache = F, echo = F, message = F, warning = F, tidy = F, results='hide'}
 # make this an external chunk that can be included in any file
 require(rCharts)
-options(RCHART_WIDTH = 800, RCHART_HEIGHT = 500)
+options(RCHART_WIDTH = 800, RCHART_HEIGHT = 400)
 knitr::opts_chunk$set(comment = NA, results = 'asis', tidy = F, message = F)
 library(devtools)
 library(slidify)
@@ -48,6 +48,9 @@ n1 <- nPlot(SepalLength ~ PetalWidth,
             group = 'Species',
             data = iris,
             type = 'scatterChart')
+
+n1$xAxis(axisLabel = "Petal Width (cm)" )
+n1$yAxis(axisLabel = "Sepal Length (cm)" )
 
 #n1$save('fig/n1.html')
 n1$print('chart1')

@@ -40,7 +40,7 @@ logo : iris.jpg
       var opts = {
  "dom": "chart1",
 "width":    800,
-"height":    500,
+"height":    400,
 "x": "PetalWidth",
 "y": "SepalLength",
 "group": "Species",
@@ -1130,11 +1130,13 @@ logo : iris.jpg
          
         
           
-        
+        chart.xAxis
+  .axisLabel("Petal Width (cm)")
 
         
         
-        
+        chart.yAxis
+  .axisLabel("Sepal Length (cm)")
       
        d3.select("#" + opts.id)
         .append('svg')
